@@ -1,0 +1,10 @@
+[init]
+	defaultBranch = main
+[user]
+	email = flaviohbatista@gmail.com
+	name = Flavio Heleno
+	signingkey = /home/flavio/.ssh/id_ed25519.pub
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
