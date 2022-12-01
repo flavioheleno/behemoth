@@ -1,0 +1,2 @@
+# Disable power control (Apple Magic Mouse)
+ACTION=="add", SUBSYSTEM=="bluetooth", ATTR{idVendor}=="05AC", ATTR{idProduct}=="030D", TEST=="power/control", ATTR{power/control}="off"
