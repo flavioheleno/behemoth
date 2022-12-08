@@ -1,2 +1,5 @@
-# Disable power control (Apple Magic Mouse)
-ACTION=="add", SUBSYSTEM=="bluetooth", ATTR{idVendor}=="05AC", ATTR{idProduct}=="030D", TEST=="power/control", ATTR{power/control}="off"
+# Disable autosuspend (Apple Magic Mouse - Bluetooth)
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="05ac", ATTR{idProduct}=="030d", ATTR{power/autosuspend}="-1"
+
+# Disable autosuspend (Apple Keyboard - Bluetooth)
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="05ac", ATTR{idProduct}=="0255", ATTR{power/autosuspend}="-1"
