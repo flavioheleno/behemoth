@@ -1,0 +1,10 @@
+# General
+#ACTION=="add", KERNELS=="uhid", SUBSYSTEMS=="misc", ATTR{power/control}="on"
+
+# Apple Magic Mouse
+#ACTION=="add", SUBSYSTEM=="input", ATTR{id/vendor}=="05ac", ATTR{id/product}=="030d", ATTR{power/control}="on"
+#ACTION=="add", SUBSYSTEMS=="hid", DRIVERS=="magicmouse", ATTR{power/control}="on"
+
+# Apple Keyboard
+#ACTION=="add", SUBSYSTEM=="input", ATTR{id/vendor}=="05ac", ATTR{id/product}=="0255", ATTR{power/control}="on"
+#ACTION=="add", SUBSYSTEMS=="hid", DRIVERS=="apple", ATTR{power/control}="on"
