@@ -1,0 +1,8 @@
+chip "nct6799-isa-0290"
+    label fan1 "CHA1"
+    label fan2 "CPU"
+    label fan3 "CHA2"
+    label fan4 "CHA3"
+    label fan5 "CHA4"
+    label fan6 "W_PUMP+"
+    label fan7 "AIO_PUMP"
